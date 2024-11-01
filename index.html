@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo">iPhone E-Store</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <img src="https://images.unsplash.com/photo-1592286927505-1def25115558?w=800&auto=format" alt="iPhone Hero">
+                <div class="hero-text">
+                    <h2>Discover the Latest iPhones</h2>
+                    <button class="shop-btn">Shop Now</button>
+                </div>
+            </section>
+
+            <section class="products">
+                <h2>Featured Products</h2>
+                <div class="product-list" id="product-list">
+                    <!-- Products will be dynamically generated here -->
+                </div>
+            </section>
+        </main>
+
+        <div class="cart-overlay" id="cart-overlay">
+            <div class="cart">
+                <h2>Junaid Cart</h2>
+                <div class="cart-items" id="cart-items"></div>
+                <button class="close-cart" onclick="toggleCart()">Close</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 iPhone Store. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
